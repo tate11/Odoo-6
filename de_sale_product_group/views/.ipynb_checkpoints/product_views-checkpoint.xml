@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_product_normal_form_inherit" model="ir.ui.view">
+        <field name="name">view.product.normal.form.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name='attribute_value_ids' position='after'>
+                <field name="group_id"/>
+            </field>
+        </field>
+    </record>
+</odoo>
