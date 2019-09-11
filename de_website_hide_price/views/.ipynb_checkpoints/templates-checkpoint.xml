@@ -3,7 +3,7 @@
     <template id="de_website_show_contact_price_product_detail" inherit_id="website_sale.product">
         <xpath expr="//a[@id='add_to_cart']" position="after">
             <div groups="base.group_public" class="s_btn text-center pt16 pb16" data-name="Buttons">
-                <a href="/register" class="btn btn-beta">Contact for Price</a>
+                <a href="/register" class="btn btn-beta flat btn-sm">Contact for Price</a>
             </div>
         </xpath>
         <xpath expr="//a[@id='add_to_cart']" position="attributes">
@@ -23,7 +23,7 @@
     <template id="de_website_hide_price_products_item" inherit_id="website_sale.products_item" >
         <xpath expr="//div[@itemprop='offers']" position="after">
             <div groups="base.group_public" class="s_btn text-center pt16 pb16" data-name="Buttons">
-                <a href="/register" class="btn btn-beta">Contact for Price</a>
+                <a href="/register" class="btn btn-beta flat btn-sm">Contact for Price</a>
             </div>
         </xpath>
         <xpath expr="//div[@itemprop='offers']" position="attributes">
