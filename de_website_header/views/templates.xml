@@ -10,8 +10,8 @@
         <template id="header" inherit_id="website.layout" name="Header Shop Wishlist Link">
             <xpath expr="//header//ul[@id='top_menu']/li[hasclass('divider')]" position="before">
                 <li groups="base.group_public" class="nav-item">
-                    <a role="menuitem" href="/shop" class="nav-link ">
-                        <span data-oe-model="website.menu" data-oe-id="13" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Paraphernalla</span>
+                    <a role="menuitem" href="/register" class="nav-link ">
+                        <span data-oe-model="website.menu" data-oe-id="13" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Register</span>
                     </a>
                 </li>
             </xpath>
@@ -19,6 +19,11 @@
         
         
         <template id="website_portal_top_header" inherit_id="website.layout">
+           <!-- 
+            <xpath expr="//div/header/nav[@id='preheader']" position="replace">
+                <span></span>
+            </xpath>
+            -->
             <xpath expr="//header//nav[1]" position="before">
                 <section class="s_text_block preheader pt0 pb0">
                 <div class="container">
@@ -70,6 +75,8 @@
             <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
                 <span></span>
             </xpath>
+            
+            
             
         </template>
     </data>
