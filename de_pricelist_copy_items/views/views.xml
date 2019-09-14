@@ -20,6 +20,9 @@
            <xpath expr="//field[@name='applied_on']" position="before">
                <field name="pricelist_id"/>
             </xpath>
+            <xpath expr="//field[@name='base_pricelist_id']" position="after">
+               <field name="price_on_basepricelist"/>
+            </xpath>
         </field>
     </record>
       
