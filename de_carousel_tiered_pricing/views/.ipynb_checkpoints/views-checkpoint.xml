@@ -1,6 +1,5 @@
 <odoo>
   <data>
-      <!--
       <record id="view_mrp_workcenter_form_inherit" model="ir.ui.view">
         <field name="name">view.mrp.workcenter.form.inherit</field>
         <field name="model">mrp.workcenter</field>
@@ -12,7 +11,6 @@
             </xpath>
         </field>
     </record>
--->
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="de_carousel_tiered_pricing.list">
