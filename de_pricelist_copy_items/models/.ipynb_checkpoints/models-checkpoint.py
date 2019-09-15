@@ -29,7 +29,7 @@ class PriceList(models.Model):
 class PriceListItem(models.Model):
     _inherit = 'product.pricelist.item'
 
-    price_on_basepricelist = fields.Monetary(string="Price on base pricelist",compute="_calculate_price_on_basepricelist")
+    price_on_basepricelist = fields.Float(string="Price on base pricelist",compute="_calculate_price_on_basepricelist",digits=dp.get_precision('Product Price'))
     currency_id = fields.Many2one('res.currency',related='pricelist_id.currency_id',string='Currency')
     
     
@@ -39,20 +39,24 @@ class PriceListItem(models.Model):
         from_amount = 0
         date = self._context.get('date') or fields.Date.today()
         company_id = self._context.get('company_id') or self.env['res.users']._get_company().id
+        round_curr = self.pricelist_id.currency_id.round
         for rs in self:
-            from_currency_id = rs.base_pricelist_id.currency_id
+            from_currency_id = rs.pricelist_id.currency_id
             to_currency_id = rs.base_pricelist_id.currency_id
             
             if rs.base_pricelist_id:
-                if rs.applied_on == 'Product':
+                if rs.applied_on == '1_product':
                     from_amount = self.env['product.pricelist.item'].search([('pricelist_id', '=', rs.base_pricelist_id.id),('product_tmpl_id', '=', rs.product_tmpl_id.id),('min_quantity', '=', rs.min_quantity)],limit=1).fixed_price
                 elif rs.applied_on == '0_product_variant':
                     from_amount = self.env['product.pricelist.item'].search([('pricelist_id', '=', rs.base_pricelist_id.id),('product_id', '=', rs.product_id.id),('min_quantity', '=', rs.min_quantity)],limit=1).fixed_price
             else:
                 from_amount = 0
                 #from_amount = 0
-                #rs.price_on_basepricelist = from_currency_id._convert(abs(from_amount),rs.currency_id,company_id,date)
-            rs.price_on_basepricelist = from_amount
+            rs.price_on_basepricelist = abs(from_amount) * rs.pricelist_id.currency_id.rate
+            #rs.price_on_basepricelist = from_currency_id._convert(abs(from_amount),to_currency_id,company_id,date)
+            
+            #currency_id._convert(self.amount_total, self.company_id.currency_id, self.company_id, self.date_invoice or fields.Date.today())
+            #rs.price_on_basepricelist = from_amount
     
     @api.multi
     def _write(self, values):

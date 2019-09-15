@@ -29,7 +29,7 @@ class PriceList(models.Model):
 class PriceListItem(models.Model):
     _inherit = 'product.pricelist.item'
 
-    price_on_basepricelist = fields.Float(string="Price on base pricelist",compute="_calculate_price_on_basepricelist")
+    price_on_basepricelist = fields.Float(string="Price on base pricelist",compute="_calculate_price_on_basepricelist",digits=dp.get_precision('Product Price'))
     currency_id = fields.Many2one('res.currency',related='pricelist_id.currency_id',string='Currency')
     
     
@@ -39,6 +39,7 @@ class PriceListItem(models.Model):
         from_amount = 0
         date = self._context.get('date') or fields.Date.today()
         company_id = self._context.get('company_id') or self.env['res.users']._get_company().id
+        round_curr = self.pricelist_id.currency_id.round
         for rs in self:
             from_currency_id = rs.pricelist_id.currency_id
             to_currency_id = rs.base_pricelist_id.currency_id
