@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+        <!-- Add Product Banner at homepage -->
+        <template id="website_product_banner" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="myProductCarousel" class="s_carousel carousel slide s_carousel_default" data-interval="10000">
+                    <ol class="carousel-indicators d-none">
+                      <li data-target="#myCarousel1567625121223" data-slide-to="0" class="active"/>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item oe_img_bg pt144 pb88 oe_custom_bg active" style="background-image: url(&quot;/web/image/1938/bg1.jpg&quot;); background-position: 99.94% 35.08%;" data-name="Slide">
+            <div class="container">
+              <div class="row content">
+                <div class="carousel-content col-lg-6">
+                  <p class="lead">&amp;nbsp; <img class="img-fluid o_we_custom_image" src="/web/image/1940/jar2.png" data-original-title="" title="" aria-describedby="tooltip815922"/></p>
+                </div>
+                <div class="carousel-content col-lg-4">
+                  <div class="s_title pb8" data-name="Title">
+                    <h2 class="s_title_default">
+                      <font style="color: rgb(255, 255, 255); font-size: 62px;">NEW DANK</font>
+                    </h2>
+                    <h2 class="s_title_default">
+                      <font style="color: rgb(255, 255, 255); font-size: 36px;">JARS &amp;amp; CONTAINERS</font>
+                    </h2>
+                  </div>
+                </div>
+                <div class="carousel-content col-lg-2">
+                  <div class="s_title pb8" data-name="Title">
+                    <h2 class="s_title_default">
+                      <font style="color: rgb(255, 255, 255); font-size: 36px;">Definitely Not </font>
+                    </h2>
+                    <h2 class="s_title_default">
+                      <font style="color: rgb(255, 255, 255); font-size: 36px;">Canna Fresh</font>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-control-prev d-none" data-target="#myCarousel1567625121223" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+          <span class="carousel-control-prev-icon"/>
+          <span class="sr-only o_default_snippet_text">Previous</span>
+        </div>
+        <div class="carousel-control-next d-none" data-target="#myCarousel1567625121223" data-slide="next" role="img" aria-label="Next" title="Next">
+          <span class="carousel-control-next-icon"/>
+          <span class="sr-only o_default_snippet_text">Next</span>
+        </div>
+      </div>
+            </xpath>
+        </template>
+        <!--   <ul> -->
+        <!--     <li t-foreach="objects" t-as="object"> -->
+        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
+        <!--         <t t-esc="object.display_name"/> -->
+        <!--       </a> -->
+        <!--     </li> -->
+        <!--   </ul> -->
+        <!-- </template> -->
+        <!-- <template id="object"> -->
+        <!--   <h1><t t-esc="object.display_name"/></h1> -->
+        <!--   <dl> -->
+        <!--     <t t-foreach="object._fields" t-as="field"> -->
+        <!--       <dt><t t-esc="field"/></dt> -->
+        <!--       <dd><t t-esc="object[field]"/></dd> -->
+        <!--     </t> -->
+        <!--   </dl> -->
+        <!-- </template> -->
+    </data>
+</odoo>

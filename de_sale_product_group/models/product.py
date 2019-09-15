@@ -11,4 +11,4 @@ class ProductGroup(models.Model):
 class Product(models.Model):
     _inherit = 'product.product'
     
-    group_id = fields.Many2one('product.group', string='Product Group',readonly=True, store=True)
+    group_id = fields.Many2one('product.group', string='Product Group',store=True)

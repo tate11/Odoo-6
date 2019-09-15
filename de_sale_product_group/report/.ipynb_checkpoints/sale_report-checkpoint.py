@@ -10,6 +10,6 @@ class SaleReport(models.Model):
     group_id = fields.Many2one('product.group', string='Group', readonly=True)
     
     def _query(self, with_clause='', fields={}, groupby='', from_clause=''):
-        fields['group_id'] = ", p.group_id as product_group"
+        fields['group_id'] = ", p.group_id as group_id"
         groupby += ', p.group_id'
         return super(SaleReport, self)._query(with_clause, fields, groupby, from_clause)
