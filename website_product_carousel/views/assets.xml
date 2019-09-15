@@ -8,8 +8,8 @@
                   rel="stylesheet" type="text/css"/>
             <link href="/website_product_carousel/static/src/less/website_product_carousel.scss"
                   rel="stylesheet" type="text/less"/>
-            <script type="text/javascript" src="/de_website_product_carousel/static/src/js/owl.carousel.js"/>
-            <script type="text/javascript" src="/de_website_product_carousel/static/src/js/c_frontend.js"/>
+            <script type="text/javascript" src="/website_product_carousel/static/src/js/owl.carousel.js"/>
+            <script type="text/javascript" src="/website_product_carousel/static/src/js/c_frontend.js"/>
         </xpath>
     </template>
 

@@ -1,10 +1,10 @@
 {
-    'name': 'Website Product Carousel ',
+    'name': 'Website Product Carousel Slider',
     'summary': 'Easily drag and drop Website Product Carousel and Quickly Configure our Product Carousel',
     'description': 'Easily drag and drop Website Product Carousel and Quickly Configure our Product Carousel',
-    'category': 'eCommerce',
-    'version': '1.1',
-    'author': 'Dynexcel',
+    'category': 'Website/eCommerce',
+    'version': '12.0.1.0.1',
+    'author': 'Tecspek',
     'data': [
         'security/ir.model.access.csv',
         'views/assets.xml',
@@ -21,7 +21,7 @@
     'images': [
         'static/description/banner.png'
     ],
-    'support': 'info@dynexcel.com',
+    'support': 'help.tecspek@gmail.com',
     'installable': True,
     'application': True,
     'auto_install': False,
