@@ -75,9 +75,17 @@
             <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
                 <span></span>
             </xpath>
-            
-            
-            
         </template>
+        <!-- add black  space in menu bar -->
+        <!--
+        <template id="header" inherit_id="website.layout" name="blank menu">
+        <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="before">
+                <li id="blank" class="nav-item" style="width:20rem;">
+                    
+                </li>
+        </xpath>
+    </template>
+-->
+        
     </data>
 </odoo>
