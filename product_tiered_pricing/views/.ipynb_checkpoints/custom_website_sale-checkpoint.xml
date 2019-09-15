@@ -9,7 +9,7 @@
     <template id="prduct_pricelist" inherit_id="website_sale.product" active="False" customize_show="True" name="Product Tiered Pricing">
         <!-- <xpath expr="//div[@id='product_details']//form" position="after"> -->
         <!-- <xpath expr="//div[hasclass('o_not_editable')]" position="before"> -->
-        <xpath expr="//a[@id='add_to_cart']" position="before">
+        <xpath expr="//div[@itemprop='offers']" position="before">
             <t t-call="product_tiered_pricing.web_pricelist"/>
         </xpath>
     </template>
