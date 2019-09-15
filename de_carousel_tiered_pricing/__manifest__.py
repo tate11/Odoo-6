@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','product_tiered_pricing','de_website_product_carousel'],
+    'depends': ['base','product_tiered_pricing','website_product_carousel'],
 
     # always loaded
     'data': [
