@@ -2,7 +2,7 @@
     <!-- product carousel price -->
     <template id="de_website_show_contact_price_product_carousel" inherit_id="website_product_carousel.rendering_product_item_inherit_cart">
         <xpath expr="//div[@itemprop='offers']" position="after">
-            <div groups="base.group_public" class="s_btn text-center pt16 pb16" data-name="Buttons">
+            <div groups="base.group_public" class="s_btn text-left pt16 pb16" data-name="Buttons">
                 <a href="/register" class="btn btn-beta flat btn-sm">Contact for Price</a>
             </div>
         </xpath>
