@@ -59,6 +59,12 @@
                                             <h4><span t-field="res_company.phone"/><br/>Customer Support</h4>
                                         </td>
                                         <td class="text-center" width="">
+                                            <h3><span class="fa fa-envelope"/></h3>
+                                        </td>
+                                        <td class="pt8 text-left" width="">
+                                            <h4><span t-field="res_company.email"/></h4>
+                                        </td>
+                                        <td class="text-center" width="">
                                             <h3><span class="fa fa-shield"/></h3>
                                         </td>
                                         <td class="pt8 text-left" width="40%">
@@ -88,15 +94,13 @@
             </xpath>
         </template>
         <!-- add black  space in menu bar -->
-        <!--
         <template id="header" inherit_id="website.layout" name="blank menu">
-        <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="before">
-                <li id="blank" class="nav-item" style="width:20rem;">
+            <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="before">
+                <li id="blank-nav-item" class="nav-item blank-nav-item" >
                     
                 </li>
-        </xpath>
-    </template>
--->
+            </xpath>
+        </template>
         
     </data>
 </odoo>
