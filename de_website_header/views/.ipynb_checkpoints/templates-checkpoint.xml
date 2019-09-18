@@ -35,7 +35,18 @@
                             
                         </div>
                         <div class="pt8 pb0 col-lg-5">
-                            <h4><t t-call="website.website_search_box"/></h4>
+                            
+            <form action="/shop" method="get">
+                <div class="input-group">
+                    <input type="text" name="search" class="search-query form-control oe_search_box" placeholder="Search..." t-att-value="search"/>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary oe_search_button" aria-label="Search" title="Search">
+                            <i class="fa fa-search"/>
+                        </button>
+                    </div>
+                </div>
+</form>
+
                         </div>
                         <div class="pt0 pb0 col-lg-5">
                             <table class="table table-borderless box">
@@ -77,15 +88,13 @@
             </xpath>
         </template>
         <!-- add black  space in menu bar -->
-        <!--
         <template id="header" inherit_id="website.layout" name="blank menu">
-        <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="before">
+            <xpath expr="//header//ul[@id='top_menu']/li[6]" position="after">
                 <li id="blank" class="nav-item" style="width:20rem;">
                     
                 </li>
-        </xpath>
-    </template>
--->
+            </xpath>
+        </template>
         
     </data>
 </odoo>

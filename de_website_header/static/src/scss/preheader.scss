@@ -11,13 +11,19 @@
         height:60px;
     }
     .preheader h3 {
-        font-size: 2.8rem !important;
+        font-size: 1.3rem !important;
     }
     .preheader h4 {
-        font-size: 1.0rem !important;
+        font-size: 0.7rem !important;
     }
     .preheader .table th, .preheader .table td {
         padding:0.15rem;
+    }
+    .homepage .preheader {
+    background-color:transparent!important;
+    }
+    #blank-nav-item {
+        width:20rem;
     }
 }
 
@@ -46,12 +52,9 @@
 .preheader {
     background-color:#000000;
 }
-.homepage .preheader {
-    background-color:transparent!important;
-}
+
 .preheader h4 {
     color:#ffffff !important;
-    font-size: 1.0rem !important;
 }
 .navbar-light .navbar-nav .nav-link{
     color:#ffffff !important;
