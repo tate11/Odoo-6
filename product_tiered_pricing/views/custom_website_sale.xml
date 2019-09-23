@@ -18,6 +18,7 @@
         <t t-set="pricelist" t-value="pricelist_items"/>
         <div class="product_pricelist">
             <t t-if="pricelist">
+			<br/>
                 <!--
                 <hr />
                 <h4><b>Special Price Offers</b></h4>
