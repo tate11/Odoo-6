@@ -28,15 +28,15 @@
             </div>
           </div>
 		  <div class="row form-group form-field o_website_form_required_custom">
-                      <div class="col-md-4 text-md-right">
-                        <label class="col-form-label" for="contact_name">
+			<div class="col-md-4 text-md-right">
+				<label class="col-form-label" for="contact_name">
                     Contact Name
                 </label>
-                      </div>
-                      <div class="col-md-8">
-                        <input type="text" class="form-control o_website_form_input" name="contact_name"/>
-                      </div>
-                    </div>
+            </div>
+            <div class="col-md-8">
+				<input type="text" class="form-control o_website_form_input" name="contact_name"/>
+            </div>
+          </div>
           <div class="row form-group form-field o_website_form_required_custom">
             <div class="col-md-4 text-md-right" style="">
               <label class="col-form-label" for="phone">
