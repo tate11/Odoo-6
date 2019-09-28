@@ -65,6 +65,13 @@
             </div>
             <div class="col-md-8">
               <select class="form-control o_website_form_input" name="country_id" required="false">
+                  <optgroup>
+                  <option value="38">Canada</option>
+                   <option value="233">
+                            United States
+                        </option>
+                 </optgroup>
+                <optgroup label="________________________">
                 <option value="3">
                             Afghanistan
                         </option>
@@ -179,9 +186,7 @@
                 <option value="47">
                             Cameroon
                         </option>
-                <option value="38">
-                            Canada
-                        </option>
+                
                 <option value="52">
                             Cape Verde
                         </option>
@@ -773,9 +778,6 @@
                 <option value="231">
                             United Kingdom
                         </option>
-                <option value="233">
-                            United States
-                        </option>
                 <option value="234">
                             Uruguay
                         </option>
@@ -815,6 +817,7 @@
                 <option value="15">
                             Åland Islands
                         </option>
+                 </optgroup>
               </select>
             </div>
           </div>
