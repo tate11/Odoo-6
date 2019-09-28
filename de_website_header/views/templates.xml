@@ -8,7 +8,7 @@
         
         <!-- add register menu link -->
         <template id="header" inherit_id="website.layout" name="Header Shop Wishlist Link">
-            <xpath expr="//header//ul[@id='top_menu']/li[hasclass('divider')]" position="before">
+            <xpath expr="//header//ul[@id='top_menu']/li[hasclass('divider')]" position="after">
                 <li groups="base.group_public" class="nav-item">
                     <a role="menuitem" href="/register" class="nav-link ">
                         <span data-oe-model="website.menu" data-oe-id="13" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Register</span>
@@ -98,6 +98,11 @@
             <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="before">
                 <li id="blank-nav-item" class="nav-item blank-nav-item" >
                     
+                </li>
+                <li groups="base.group_public" class="nav-item">
+                    <a role="menuitem" href="/register" class="nav-link ">
+                        <span data-oe-model="website.menu" data-oe-id="13" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Register</span>
+                    </a>
                 </li>
             </xpath>
         </template>
